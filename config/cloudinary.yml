@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: sarazilla
+  api_key: '621858345579474'
+  api_secret: 1rilj-EVmYy1R0YaTpFPstOEUFo
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: sarazilla
+  api_key: '621858345579474'
+  api_secret: 1rilj-EVmYy1R0YaTpFPstOEUFo
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: sarazilla
+  api_key: '621858345579474'
+  api_secret: 1rilj-EVmYy1R0YaTpFPstOEUFo
+  enhance_image_tag: true
+  static_image_support: false

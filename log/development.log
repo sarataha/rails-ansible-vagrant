@@ -1,0 +1,972 @@
+
+
+Started GET "/" for ::1 at 2017-04-14 14:36:04 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (86.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35mUser Load (36.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 130ms (ActiveRecord: 37.4ms)
+
+
+Started GET "/login" for ::1 at 2017-04-14 14:36:05 +0200
+Processing by SessionsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (103.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_admin_header.html.erb (1.6ms)
+  Rendered layouts/_flash_messages.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 762ms (Views: 759.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a6b239936605c4333bcad5709ae9a166c710e7a678c8ddac5b435fb71e0e3a12.css?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/full-theme/welcome.self-1857bd221a3fa25ed99be7ab67cd8ee22714910670d4720478a99077133bcd7b.css?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/materialize/global.self-6278d27c18237cf0b6fcd96a6bf27f58369de2c4d26bcb45ac9c49a50c0ad80a.js?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/materialize/velocity.min.self-b01240ce1811a86e98a242cf1710553d1db34655f36b1e4ed745a7dc125db0ca.js?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2017-04-14 14:36:06 +0200
+
+
+Started GET "/assets/materialize/collapsible.self-bef6d527d6d38fc450d40f0e2733a1ccefc1817d34e041f69891c11b22642772.js?body=1" for ::1 at 2017-04-14 14:36:07 +0200
+
+
+Started GET "/assets/materialize/materialbox.self-697b2e84aa96b92b704f270bccaf72f5b0839012265d47e20695d6c7e54041b1.js?body=1" for ::1 at 2017-04-14 14:36:07 +0200
+
+
+Started GET "/assets/materialize/tabs.self-8b03a508bef52283d6f302037fd672ca9d379a1901d72baa59418484071b8cbf.js?body=1" for ::1 at 2017-04-14 14:36:07 +0200
+
+
+Started GET "/assets/materialize/dropdown.self-fae0917ba1dc6dc6cc00c9df451fd18ac72957677fb76b6291418398aaa3440c.js?body=1" for ::1 at 2017-04-14 14:36:07 +0200
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for ::1 at 2017-04-14 14:36:07 +0200
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2017-04-14 14:36:07 +0200
+
+
+Started GET "/assets/materialize/tooltip.self-cd3548bc6934ec5af60f0e60c1146ebfeafac763b904e6f896119f1cd5c52a6e.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/sideNav.self-edaf1f17663d1cdb6a2c7ea0888ffc6b25a8d279e45ec96a63524893d7f99bfe.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/toasts.self-e6883cac22ad22f88149b85c3e9efdee36fba56008586f550e6cb647386e0407.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/forms.self-3bb4c6691a15a59ee12a1577c137f5849d58265b45a01f2bd76dbd9a963083d4.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/slider.self-b45587c52188bb778a060d2deee7c89f76474b48bc44559a0f8ca0b42a738b9b.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/buttons.self-e24986f138b11adc95249c0795e0357b52be8177ce2e894d41818868f51b09ed.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/scrollFire.self-f18a16d9bb0e0177e01b0326e41c601a6a85bb6a00dbca34593f88a6c89770d2.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/cards.self-e21f14b1b3c6987af4297d4da8ff5de59296ff2e37e2d062ec0c6d2dff4c8001.js?body=1" for ::1 at 2017-04-14 14:36:08 +0200
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/admin.self-cce4bb7abbaa4232881cc722b8fa493d4af2f30701954a334d24ce98b7c1841f.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/administrator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/materialize-sprockets.self-a66b8b29b6eb6d8d6ac137234cb5d8f49f9bb4507a678c7f3ff97659a36ae3b0.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/cart_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/checkout.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/custom.self-37a95246e71ae0ea9579bfc860433938b774bd6a3474416a9f0e61aba73e7ff8.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/foods.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/index.self-5ab560c1344c09b36fbdbf1f68dadff6a6545ce6257092866fb29eb37334587b.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/order_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/payments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-04-14 14:36:09 +0200
+
+
+Started POST "/login" for ::1 at 2017-04-14 14:36:16 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IbQpiKEeQgBjcSBIG5mHBriBdx/f/Ehw2oiATnc+3Z/mfcGDekuRWvxT3utwJV410p5Jsrpl8KbHuhi3CppBLA==", "session"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 148ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/admin" for ::1 at 2017-04-14 14:36:16 +0200
+Processing by AdministratorController#show as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+  [1m[36m (21.3ms)[0m  [1mSELECT COUNT(*) FROM `orders`[0m
+  [1m[35mOrder Load (11.6ms)[0m  SELECT  `orders`.* FROM `orders`  ORDER BY created_at desc LIMIT 10 OFFSET 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
+  [1m[36mProduct Load (16.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (1) LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE (2) LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE (2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE (2) LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE (3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (1.3ms)[0m  [1mSELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE (3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE (3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE (3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  Rendered administrator/_orders.html.erb (244.1ms)
+  Rendered administrator/show.html.erb within layouts/application (245.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_admin_header.html.erb (45.7ms)
+  Rendered layouts/_flash_messages.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 499ms (Views: 349.9ms | ActiveRecord: 107.2ms)
+
+
+Started GET "/assets/yuna-e0a5f1739ad88bb38226aff85da5975ab09af4697016fe773da8f3e36b266fb6.jpg" for ::1 at 2017-04-14 14:36:17 +0200
+
+ActionController::RoutingError (No route matches [GET] "/assets/yuna-e0a5f1739ad88bb38226aff85da5975ab09af4697016fe773da8f3e36b266fb6.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/sara/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/sara/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/sara/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.5ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (106.0ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.0ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.4ms)
+
+
+Started GET "/admin/users" for ::1 at 2017-04-14 14:36:20 +0200
+Processing by AdministratorController#user_index as JS
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`created_at` DESC LIMIT 10 OFFSET 0[0m
+  Rendered administrator/_users.html.erb (12.5ms)
+  Rendered administrator/user_index.js.erb (14.6ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/products" for ::1 at 2017-04-14 14:36:26 +0200
+Processing by AdministratorController#product_index as JS
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT `products`.* FROM `products`  ORDER BY `products`.`created_at` DESC[0m
+  Rendered administrator/_products.html.erb (6.4ms)
+  Rendered administrator/product_index.js.erb (8.5ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/nigerian-jollof-rice-02b95f4ff3c499e7db479b274f99e111076694172f7af690475e5d3d3b04da9e.jpg" for ::1 at 2017-04-14 14:36:26 +0200
+
+ActionController::RoutingError (No route matches [GET] "/assets/nigerian-jollof-rice-02b95f4ff3c499e7db479b274f99e111076694172f7af690475e5d3d3b04da9e.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/sara/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/sara/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/sara/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.3ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (24.9ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/sara/.rvm/gems/ruby-2.3.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.2ms)
+
+
+Started GET "/" for 192.168.66.1 at 2017-05-06 09:04:29 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (13)):
+  mysql2 (0.3.21) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.21) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.7ms)
+  [1m[36m (81.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (24.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20150803151807)
+  [1m[35m (2.2ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `room_no` varchar(255), `ext` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150803151807')
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCategories (20150803154630)
+  [1m[35m (1.5ms)[0m  CREATE TABLE `categories` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `description` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150803154630')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProducts (20150803215542)
+  [1m[35m (1.6ms)[0m  CREATE TABLE `products` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `price` float, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150803215542')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddProductToOrderItem (20150806151022)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (18.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150806151022')[0m
+  [1m[35m (4.9ms)[0m  COMMIT
+Migrating to AddPasswordDigestToUsers (20150810153548)
+  [1m[36m (2.9ms)[0m  [1mALTER TABLE `users` ADD `password_digest` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150810153548')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+Migrating to AddPaperClipToUser (20150817113401)
+  [1m[36m (3.5ms)[0m  [1mALTER TABLE `users` ADD `avatar_file_name` varchar(255)[0m
+  [1m[35m (34.9ms)[0m  ALTER TABLE `users` ADD `avatar_content_type` varchar(255)
+  [1m[36m (2.9ms)[0m  [1mALTER TABLE `users` ADD `avatar_file_size` int(11)[0m
+  [1m[35m (2.6ms)[0m  ALTER TABLE `users` ADD `avatar_updated_at` datetime
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150817113401')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150817140646)
+  [1m[35m (1.6ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `comment` varchar(255), `product_id` int(11), `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150817140646')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddStatusColumnToProducts (20150819105306)
+  [1m[35m (3.3ms)[0m  ALTER TABLE `products` ADD `status` varchar(255) DEFAULT 'available'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150819105306')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddRoleColumnToUsers (20150819145213)
+  [1m[35m (3.0ms)[0m  ALTER TABLE `users` ADD `role` varchar(255) DEFAULT 'user'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150819145213')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttachmentProductImageToProducts (20150819155722)
+  [1m[35m (3.0ms)[0m  ALTER TABLE `products` ADD `product_image_file_name` varchar(255)
+  [1m[36m (3.6ms)[0m  [1mALTER TABLE `products` ADD `product_image_content_type` varchar(255)[0m
+  [1m[35m (4.7ms)[0m  ALTER TABLE `products` ADD `product_image_file_size` int(11)
+  [1m[36m (2.8ms)[0m  [1mALTER TABLE `products` ADD `product_image_updated_at` datetime[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150819155722')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+Migrating to CreateOrders (20150820162156)
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE `orders` (`id` int(11) auto_increment PRIMARY KEY, `Status` varchar(255) DEFAULT 'Pending', `total` int(11), `vat` int(11), `delivery_cost` int(11), `user_id` int(11), `notes` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20150820162156')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to AddTransactionDetailsToOrders (20150826141438)
+  [1m[36m (2.7ms)[0m  [1mALTER TABLE `orders` ADD `transaction_id` varchar(255)[0m
+  [1m[35m (4.6ms)[0m  ALTER TABLE `orders` ADD `invoice` varchar(255)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150826141438')
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddCategoryIdToProduct (20151013091148)
+  [1m[35m (2.7ms)[0m  ALTER TABLE `products` ADD `category_id` int(11)
+  [1m[36m (7.9ms)[0m  [1mCREATE  INDEX `index_products_on_category_id`  ON `products` (`category_id`) [0m
+  [1m[35m (47.0ms)[0m  ALTER TABLE `products` ADD CONSTRAINT `fk_rails_fb915499a4`
+FOREIGN KEY (`category_id`)
+  REFERENCES `categories` (`id`)
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151013091148')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateOrderItems (20151013095931)
+  [1m[35m (2.5ms)[0m  CREATE TABLE `order_items` (`id` int(11) auto_increment PRIMARY KEY, `quantity` int(11), `product_id` int(11)) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151013095931')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddOrderToOrderItems (20151013100054)
+  [1m[35m (3.2ms)[0m  ALTER TABLE `order_items` ADD `order_id` int(11)
+  [1m[36m (6.4ms)[0m  [1mCREATE  INDEX `index_order_items_on_order_id`  ON `order_items` (`order_id`) [0m
+  [1m[35m (3.5ms)[0m  ALTER TABLE `order_items` ADD CONSTRAINT `fk_rails_e3cb28f071`
+FOREIGN KEY (`order_id`)
+  REFERENCES `orders` (`id`)
+
+  [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151013100054')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Migrating to AddPreparationTimeToProduct (20151014112058)
+  [1m[35m (14.5ms)[0m  ALTER TABLE `products` ADD `prep_time` int(11) DEFAULT 12
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151014112058')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to AddPrepTimeToOrders (20151019151817)
+  [1m[35m (10.3ms)[0m  ALTER TABLE `orders` ADD `pickup_time` int(11) DEFAULT 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151019151817')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'itionrails_development'
+  AND fk.table_name = 'categories'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `categories`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'itionrails_development'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'itionrails_development'
+  AND fk.table_name = 'order_items'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `order_items`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'itionrails_development'
+  AND fk.table_name = 'orders'
+[0m
+  [1m[35m (0.3ms)[0m  SHOW CREATE TABLE `orders`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'itionrails_development'
+  AND fk.table_name = 'products'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `products`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'itionrails_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `products` (`name`, `description`, `price`, `created_at`, `updated_at`) VALUES ('Tea', 'Stay awake, drink ITI on Rails tea!', 5.0, '2017-05-06 09:07:19', '2017-05-06 09:07:19')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `products` (`name`, `description`, `price`, `created_at`, `updated_at`) VALUES ('Coffee', 'Nice mix of ITI and NTI coffee', 5.0, '2017-05-06 09:07:19', '2017-05-06 09:07:19')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`name`, `description`, `price`, `created_at`, `updated_at`) VALUES ('Pepsi', 'ghany 3an el ta3reef', 5.0, '2017-05-06 09:07:19', '2017-05-06 09:07:19')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `categories` (`title`, `description`, `created_at`, `updated_at`) VALUES ('Hot Drinks', 'Keep you awake, keep you warm', '2017-05-06 09:07:19', '2017-05-06 09:07:19')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `categories` (`title`, `description`, `created_at`, `updated_at`) VALUES ('Soda', 'ghany 3an el ta3reef tany', '2017-05-06 09:07:19', '2017-05-06 09:07:19')[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = 'sara@sara.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`first_name`, `last_name`, `email`, `password_digest`, `room_no`, `ext`, `created_at`, `updated_at`) VALUES ('Sara', 'Taha', 'sara@sara.com', '$2a$10$byHR3ayt3rnQvj49pCtLr.vCs8wVgjWLpu8qp6gjTE03L5VzO7u4S', '2005', '123456789', '2017-05-06 09:07:20', '2017-05-06 09:07:20')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = 'nesma@nesma.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`first_name`, `last_name`, `email`, `password_digest`, `room_no`, `ext`, `created_at`, `updated_at`) VALUES ('Nesma', 'Mamdouh', 'nesma@nesma.com', '$2a$10$qF8LggkmGK1FUpIWNViloOf4MPzr8Ne/n6BqRvjML54hPCBkBhqqG', '2005', '1234', '2017-05-06 09:07:20', '2017-05-06 09:07:20')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = 'mohamed@mohamed.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`first_name`, `last_name`, `email`, `password_digest`, `room_no`, `ext`, `created_at`, `updated_at`) VALUES ('Mohamed', 'Ehab', 'mohamed@mohamed.com', '$2a$10$ZNyHmMCqtJAV59H0sAumme8MJ2.xjRjgnsjyuvmNxA8gwzCKSq.eO', '2024', '1234', '2017-05-06 09:07:20', '2017-05-06 09:07:20')[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`first_name`, `last_name`, `email`, `password_digest`, `room_no`, `ext`, `role`, `created_at`, `updated_at`) VALUES ('Admin', 'Admin', 'admin@admin.com', '$2a$10$cz.kpC85y2YSqgnsdnQ5ruFhYDMLAcybNSnbZrggs2/mDGaJBRoH6', '2024', '01', 'admin', '2017-05-06 09:07:20', '2017-05-06 09:07:20')[0m
+  [1m[35m (0.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `orders` (`Status`, `transaction_id`, `user_id`, `created_at`, `updated_at`) VALUES ('Completed', '123ss1', 1, '2017-05-06 09:07:20', '2017-05-06 09:07:20')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `orders` (`Status`, `transaction_id`, `user_id`, `created_at`, `updated_at`) VALUES ('Cancelled', '123ss2', 1, '2017-05-06 09:07:20', '2017-05-06 09:07:20')[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `orders` (`Status`, `transaction_id`, `user_id`, `created_at`, `updated_at`) VALUES ('Processing', '123ss3', 1, '2017-05-06 09:07:20', '2017-05-06 09:07:20')
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `orders` (`Status`, `transaction_id`, `user_id`, `created_at`, `updated_at`) VALUES ('Processing', '123ss4', 1, '2017-05-06 09:07:20', '2017-05-06 09:07:20')[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (3, 1, 1)
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (2, 2, 1)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (5, 3, 1)
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (4, 3, 2)[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (5, 3, 2)
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (5, 3, 3)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (5, 3, 3)
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (5, 3, 3)[0m
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (5, 3, 4)
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (5, 3, 4)[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `order_items` (`quantity`, `product_id`, `order_id`) VALUES (5, 3, 4)
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `products` SET `category_id` = 1, `updated_at` = '2017-05-06 09:07:20' WHERE `products`.`id` = 1[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `products` SET `category_id` = 2, `updated_at` = '2017-05-06 09:07:20' WHERE `products`.`id` = 3
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `comments` (`comment`, `product_id`, `user_id`, `created_at`, `updated_at`) VALUES ('Best product ever', 1, 1, '2017-05-06 09:07:20', '2017-05-06 09:07:20')[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `comments` (`comment`, `product_id`, `user_id`, `created_at`, `updated_at`) VALUES ('I love it!!', 1, 2, '2017-05-06 09:07:20', '2017-05-06 09:07:20')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `products` (`name`, `description`, `price`, `created_at`, `updated_at`) VALUES ('Orange Juice', 'Home made orange juice', 5.0, '2017-05-06 09:07:20', '2017-05-06 09:07:20')[0m
+  [1m[35m (0.7ms)[0m  COMMIT
+
+
+Started GET "/" for 192.168.66.1 at 2017-05-06 09:07:49 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Redirected to http://192.168.66.66:3000/login
+Completed 302 Found in 95ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 192.168.66.1 at 2017-05-06 09:07:49 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (68.9ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_admin_header.html.erb (1.7ms)
+  Rendered layouts/_flash_messages.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 13961ms (Views: 13958.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-cbd8fa0b64936709cfb46ce2bcff4cf11d1f15d014a1b4f1addf46aa4ff110e3.css?body=1" for 192.168.66.1 at 2017-05-06 09:08:04 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:04 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/initial.self-79f269ead2aeaa809299033919f9128fa0d9700d0248cad0dcd6442ce43dc389.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:04 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:04 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:04 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/full-theme/welcome.self-6ccc7bb624c5cabc25825ae8ee0ed4cd7d4dee837a66ea4411b1f7806b34b393.css?body=1" for 192.168.66.1 at 2017-05-06 09:08:04 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:05 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/collapsible.self-a3874bd22bf4465a452741ca14ecbcb79889b59c2f9b5ab39191cb45933ca2e0.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:05 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:05 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/animation.self-6511a6dd531771f6d159fe702740dad70a4eac4af9fb54f501030228ddd8ba26.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:05 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/velocity.min.self-5adbb81af5c205a959e06198156b4b31fcd57f02c592e3fb096d7b74e8f401a6.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:05 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/global.self-a482570d9bc50f724f12fd68a3ac8d5e4eda8914199a82ccc5e9369444960b10.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:05 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/modal.self-3f163fd18f339c239cfab79b424ed511be77c31c626bf205a32433d1bbd71838.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:05 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/dropdown.self-1052ed0d52eb4081d3c73056508abe424e49549576e34a557165a1bfe28bd646.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:05 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/materialbox.self-b62a01d4ed31eb5b738056249fa028fd4643813a086096f0ade0397ed17f61e7.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:05 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/parallax.self-96dabbb849f200445babdc97458150e480d66ca5f074b7e37389355aed6e852a.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:06 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/tabs.self-f1ac76304dc37b2f7065d87d0a94e717e085dc2a37d1a8c3f051ce30b47e9393.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:06 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/tooltip.self-629f9253653f6309f04e90800705572857132792237c3aa94b1ccaded7b36058.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:06 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:06 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/forms.self-c71f0991097af680acc047c22f517761e84cb533f5dadfbf1a4cbec8d418d1da.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:06 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/scrollspy.self-f27d527cf793e4f03d72f5eefa1d6bbdaff76ddaac7ac46f5627246e609b4e05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:06 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/sideNav.self-d41c2b848bd7b95be64b90b34f56267ff6546de9aa648a35b4be99239981730b.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:06 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/toasts.self-b9775a23bdcb840c28f160ffc8ddc13caaa62c810a0c18e8df5be750888acc69.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:06 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/slider.self-102c4a39c970cbfb2ce6831b44840b1d00b07642df9d78c95c27835ce762c28d.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:07 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/cards.self-b78d84331c3b4ecca59db28b271bfd2cdc62d0703861ccbd13284e117b00f591.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:07 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/transitions.self-4c9d7cc62efc88c6468e448e930d13f7244479f748d362b270dc05fdb2a4c19c.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:07 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/chips.self-fbef9eb7d3f0c2ec3a9ac0f81628ba88ab0f41058f7acdc2e1bb5070fcb2720e.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:07 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/pushpin.self-b6217071e4b33cf2ce5742d81537d6f36b046c5f8fd115a01e4239cff1acd598.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:07 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/buttons.self-b27d1a29f9142ca06ded6dee42c8668e6d7f3d5104f6d5dd04b8eef1afb7823d.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:07 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/scrollFire.self-cadadb47b9b63f1a44d01646729563a271790d07dc9864140a3f6da9d918bfd3.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:07 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/date_picker/picker.self-7a9d1216fe1172f8e8fd78fb86cfd4da25c909ebd6983cba5da20817d437d92b.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:07 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:08 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/character_counter.self-387880abe7a9c92dd8fd1d534ebf228a457f00938919adf00d5598f8fe45e945.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:08 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/carousel.self-74ecce1dbf05d5a1573e3638d357167981a65defeb489247258179fe4495babb.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:08 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize/tapTarget.self-b0f7198fb7da4ab1232929dab0139d2f3b6528d6e4b9e42214f728ef16f83e0d.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:08 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/materialize-sprockets.self-04d70fb8a9450566c66d9a39ec4abe92ea4871475b0e270b5b27736d815d5f79.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:08 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin.self-cce4bb7abbaa4232881cc722b8fa493d4af2f30701954a334d24ce98b7c1841f.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:08 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/administrator.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:08 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cart_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:08 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:09 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:09 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/checkout.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:09 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:09 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-37a95246e71ae0ea9579bfc860433938b774bd6a3474416a9f0e61aba73e7ff8.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:09 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foods.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:09 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/index.self-5ab560c1344c09b36fbdbf1f68dadff6a6545ce6257092866fb29eb37334587b.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:09 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/order_items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:09 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/payments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:09 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:10 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:10 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:10 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 192.168.66.1 at 2017-05-06 09:08:10 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/login" for 192.168.66.1 at 2017-05-06 09:08:19 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sJJ6ydxKO/qgQzd92Z+aQaa94ytQLVCIm6xLueIuYY8L5G3H4kEFwjUUwlCQDVRXnVcvYeHeW6vZXuM2amY6FA==", "session"=>{"email"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_admin_header.html.erb (0.2ms)
+  Rendered layouts/_flash_messages.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 529ms (Views: 495.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for 192.168.66.1 at 2017-05-06 09:08:28 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MDpodeZIY0sHxh3KeJXL5BS21SAg1CsJaKjRj+Y4Xg2LTH972ENdc5KR6OcxBwXyL1wZapEnICoqWnkAbnAFlg==", "session"=>{"email"=>"sarataha", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'sarataha' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_admin_header.html.erb (0.1ms)
+  Rendered layouts/_flash_messages.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 558ms (Views: 544.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/login" for 192.168.66.1 at 2017-05-06 09:09:21 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XLGuJ5qL2/WDxtqqJsx+uoAajDKBqNDMCs1kKFkUnT/nx7kppIDlzRaRL4dvXrCsu/BAeDBb2+9IP8yn0VzGpA==", "session"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@admin.com' LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+Redirected to http://192.168.66.66:3000/admin
+Completed 302 Found in 113ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/admin" for 192.168.66.1 at 2017-05-06 09:09:22 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AdministratorController#show as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `orders`[0m
+  [1m[35mOrder Load (0.4ms)[0m  SELECT  `orders`.* FROM `orders`  ORDER BY created_at desc LIMIT 10 OFFSET 0
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (1) LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  `products`.* FROM `products` WHERE (2) LIMIT 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE (3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.5ms)[0m  [1mSELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE (3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE (3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT  `products`.* FROM `products` WHERE (3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE (3) LIMIT 1[0m
+  Rendered administrator/_orders.html.erb (195.9ms)
+  Rendered administrator/show.html.erb within layouts/application (214.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_admin_header.html.erb (51.5ms)
+  Rendered layouts/_flash_messages.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 874ms (Views: 844.3ms | ActiveRecord: 8.5ms)
+
+
+Started DELETE "/logout" for 192.168.66.1 at 2017-05-06 09:09:29 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GMf4Cd5LKU4HN+oJOP6/eDdzPTTS9gtXZQMREonAnAqjse8H4EAXdpJgHyRxbHFuDJnxfmMFAHQn8bmdAYjHkQ=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+Redirected to http://192.168.66.66:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.66.1 at 2017-05-06 09:09:29 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Redirected to http://192.168.66.66:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 192.168.66.1 at 2017-05-06 09:09:29 +0000
+Cannot render console from 192.168.66.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_admin_header.html.erb (0.2ms)
+  Rendered layouts/_flash_messages.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 533ms (Views: 531.1ms | ActiveRecord: 0.2ms)

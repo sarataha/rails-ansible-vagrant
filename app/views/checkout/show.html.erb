@@ -1,0 +1,16 @@
+<div class="full-height">
+  <div class="pad-bottom">
+    <h3>Confirm your order</h3>
+    <% if @current_order.ordered_items.length == 0 %>
+        <p>Your cart is still empty. What is your problem?</p>
+    <% else %>
+      <%= render "orders/current_order" %>
+    <div>
+      <%= link_to 'Back to my cart', carts_path, :class => "btn btn-success in-line left" %>
+      <%= button_to 'Make payment', @current_order.save_order(@current_user), :class => "btn btn-success in-line left" %>
+    </div>
+    <% end %>
+  </div>
+
+
+</div>

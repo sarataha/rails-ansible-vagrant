@@ -1,0 +1,79 @@
+<div class="panel header-panel flow-text">
+      <div id="title">All Products</div>
+    </div>
+<div class="full-height">
+	<div class="header">
+			<div class="row">
+				<div class="input-field col s6">
+			    <select class="select_box select_field" style="display:block">
+			      <option value="0" selected>Sort by status</option>
+			      <option value="/products" >Available</option>
+			      <option value="/">Not available</option>
+			    </select>
+			  </div>
+
+				<div class="input-field col s6">
+          <i class="material-icons prefix">search</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">Type in product name</label>
+				</div>
+			</div>
+
+	</div><!--end of header-->
+	<div class="body">
+		<table class="striped">
+		<thead>
+			<tr>
+					<th data-field="id">Product</th>
+					<!-- <th data-field="name">Description</th> -->
+					<th data-field="price">Price</th>
+					<th data-field="price">Image</th>
+					<th data-field="price">Action</th>
+<!-- 					<th data-field="price">Updated</th>
+ -->					<th data-field="price"></th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<% @products.each do |product| %>
+				<a href = "/>">
+				<tr>
+					<td><%= "#{product.name}" %></td>
+					<td><%= product.price %></td>
+					<td><%= image_tag product.product_image.url(:large), :alt => "product", :class => "circle small_pic" %></td>
+					<td>
+						<div class="switch">
+							<label>
+								Available
+								<input class="product_status" type="checkbox" data-status="<%= product.status %>" data-productid="<%= product.id %>">
+								<span class="lever"></span>
+								Unavailable
+							</label>
+						</div>
+					</td>
+					<td><%=link_to "edit", edit_product_path(product.id) %></td>
+					<td>
+						<%= button_to product_path(product.id), :class => "clear-button", method: :delete do %>
+							<i class="material-icons">clear</i>
+						<% end %>
+					</td>
+				</tr>
+
+			<% end %>
+		</tbody>
+	</table>
+	</div><!--end of header-->
+	<div class="footer">
+		<div class="row">
+		  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+		    <a class="btn-floating btn-large red">
+		      <i class="large material-icons">add</i>
+		    </a>
+		    <ul>
+		      <li><a href="/products/new" class="btn-floating yellow darken-1"><i class="material-icons">settings_input_svideo</i></a></li>
+		    </ul>
+		  </div>
+		</div>
+	</div><!--end of header-->
+
+</div>

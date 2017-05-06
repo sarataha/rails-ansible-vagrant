@@ -1,0 +1,58 @@
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+
+<div class="full-height">
+  <div class="pad-bottom">
+  <% if @ordered_products.length == 0 %>
+      <p>Your cart is empty</p>
+  <% else %>
+  <% if request.path.include?('admin') %>
+    <p></p>
+  <% end %>
+  <table class="hoverable">
+    <thead>
+      <tr style="background-color:#BCAAA4;">
+        <th data-field="id">ID</th>
+        <th data-field="name">Name</th>
+        <th data-field="description">Description</th>
+        <th data-field="quantity">Quantity</th>
+        <th data-field="price">Price</th>
+        <th data-field="line total">Item Total</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    <% @ordered_products.each do |index, details| %>
+      <% product_id = details[:product][:id] %>
+        <tr>
+          <td><%= index %></td>
+          <td id="product_name_<%= product_id %>"><%= details[:product]['name'] %></td>
+          <td id="product_desc_<%= product_id %>"><%= details[:product]['description'] %></td>
+          <td id="product_qty_<%= product_id %>"><%=form_for 'quantity', :url => {:controller => 'cart_items', :action => 'update', product_id: details[:product][:id], id: index }, method: :patch  do |f| %>
+            <%= f.number_field details[:qty], :min => 1, :value => details[:qty], :class => "qty qty-editable-width", "data-message" => product_id %>
+            <% end %>
+          </td>
+          <td id="product_unit_price_<%= product_id %>"><%= details[:product]['price'] %></td>
+          <td>LE<span class="line-total" id="product_sub_total_<%= details[:product][:id] %>" data-message="<%= details[:product]['price'] %>" ><%= details[:product]['price'].to_i * details[:qty].to_i %></span></td>
+          <td>
+            <%= button_to cart_item_delete_path(details[:product][:id]), :class => "clear-button", method: :delete  do %>
+              <i class="material-icons">clear</i>
+            <% end %>
+          </td>
+        </tr>
+      </tbody>
+      <% end %>
+      <tfoot>
+        <tr style="border-top:2px solid #3e2511">
+          <td></td>
+          <td>Notes</td>
+          <td><textarea></textarea></td>
+          <td>Room</td>
+          <td>Total</td>
+          <td id="total">LE<%= @total%></td>
+        </tr>
+      </tfoot>
+    </table>
+    <%= button_to 'Checkout', checkout_path, :class => "btn" %>
+    <% end %>
+  </div>
+</div>

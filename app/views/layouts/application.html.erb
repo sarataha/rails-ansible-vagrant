@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ITI on Rails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+  <%= stylesheet_link_tag    "#{@current_theme}-theme/welcome", media: 'all', 'data-turbolinks-track' => false %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="">
+  	<div class="background">
+      <%= render 'layouts/header' %>
+      <%= render 'layouts/admin_header' %>
+      <main>
+        <%= render 'layouts/flash_messages' %>
+        <%= yield %>
+      </main><!--End of main-->
+      <%= render 'layouts/footer' %>
+    </div><!-- end of container main-->
+  </div>
+</body>
+</html>
